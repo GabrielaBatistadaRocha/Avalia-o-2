@@ -14,5 +14,6 @@ Estilos são aplicados aos campos de entrada, botão e resultado para uma melhor
 JavaScript:
 
 A função calcularMedia é acionada quando o botão é clicado.
-A função obtém os valores dos campos de entrada, verifica se todos os valores são números válidos e calcula a média aritmética.
+A função obtém os valores dos campos de entrada, verifica se todos
+os valores são números válidos e calcula a média aritmética.
 O resultado é exibido no <div> com o id resultado.
