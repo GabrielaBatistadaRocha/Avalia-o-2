@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Média Aritmética</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular a Média Aritmética</h1>
+        <div class="input-group">
+            <label for="num1">Número 1:</label>
+            <input type="number" id="num1">
+        </div>
+        <div class="input-group">
+            <label for="num2">Número 2:</label>
+            <input type="number" id="num2">
+        </div>
+        <div class="input-group">
+            <label for="num3">Número 3:</label>
+            <input type="number" id="num3">
+        </div>
+        <div class="input-group">
+            <label for="num4">Número 4:</label>
+            <input type="number" id="num4">
+        </div>
+        <button onclick="calcularMedia()">Calcular Média</button>
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularMedia() {
+            // Obtém os valores dos campos de entrada
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const num3 = parseFloat(document.getElementById('num3').value);
+            const num4 = parseFloat(document.getElementById('num4').value);
+
+            // Verifica se todos os campos têm valores válidos
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)) {
+                document.getElementById('resultado').textContent = 'Por favor, insira todos os números.';
+                return;
+            }
+
+            // Calcula a média
+            const media = (num1 + num2 + num3 + num4) / 4;
+
+            // Exibe o resultado
+            document.getElementById('resultado').textContent = `A média aritmética é: ${media.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
