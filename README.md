@@ -1,4 +1,5 @@
 Explicação:
+
 HTML:
 
 O corpo da página contém um <div> com a classe container para centralizar o conteúdo e aplicar estilos.
